@@ -34,10 +34,10 @@ alertTemplates:
       event.name: "Significant increase in Orders Table"
       event.type: CUSTOM_ALERT
       dt.source_entity: "{dims:dt.entity.sqlite:database}"
-# Dashboards for Classic Dynatrace are defined here.    
+# Dynatrace Classic Dashboards are defined here.
 dashboards:
   - path: dashboards/overview_dashboard.json
-# New Dynatrace Dashboards are defined here.  
+# Dynatrace Platform Dashboards are defined here.
 documents:
   dashboards:
     - displayName: VS Code Example Python Extension Overview
@@ -60,7 +60,7 @@ metrics:
         - key: database_name
           displayName: Database Name
           
-# Python data source specific information is located here.
+# Python data source specific configuration is located here.
 python:
   runtime:
     module: python_vscode_example
