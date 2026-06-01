@@ -98,8 +98,8 @@ topology:
             - sourceType: Metrics
               condition: $prefix(python_vscode.example.sqlite)
           attributes:
+            # The `key` is how the attribute will be stored and available for querying on the entity.
             - key: host_name
-              # The `key` is how the attribute will be stored and available for querying on the entity.
               # The `pattern` points to the dimension (enclosed in {}) holding the value of the attribute.
               pattern: "{host_name}"
               displayName: Host
